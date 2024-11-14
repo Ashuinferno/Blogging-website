@@ -23,41 +23,5 @@ Front-End: HTML, CSS, Bootstrap
 Database: MySQL
 JavaScript: Adds interactivity and enhances user experience
 Installation
-To set up this project locally, follow these steps:
 
-Clone the Repository:
 
-bash
-Copy code
-git clone https://github.com/yourusername/blogging-website.git
-cd blogging-website
-Create a Virtual Environment:
-
-bash
-Copy code
-python -m venv venv
-source venv/bin/activate   # On Windows use `venv\Scripts\activate`
-Install Dependencies:
-
-bash
-Copy code
-pip install -r requirements.txt
-Set Up the Database:
-
-Configure MySQL and create a new database.
-Update the database settings in settings.py with your MySQL credentials.
-Run Migrations:
-
-bash
-Copy code
-python manage.py makemigrations
-python manage.py migrate
-Run the Development Server:
-
-bash
-Copy code
-python manage.py runserver
-Visit http://127.0.0.1:8000 in your browser to see the website in action.
-
-Usage
-Once installed, you can register as a new user, create and manage blog posts, browse posts by category, and interact with other users through comments. Admins have access to a dashboard for content moderation.
