@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Create a new Profile Page post{% endblock %}
+{% block content %}
+
+{% if user.is_authenticated %}
+
+<h1>Craete Profile Page...</h1>
+<br><br>
+
+<div class="form-group"></div>
+    <form method="POST" enctype="multipart/form-data">
+       {% csrf_token %}
+  
+       {{form.as_p}}
+       
+    <button class="btn btn-secondary">Create Profile Page</button>
+</div>
+
+
+
+{% else %}
+
+You're not allowed here!(and u know it....)
+
+{% endif %}
+
+
+{% endblock %}
